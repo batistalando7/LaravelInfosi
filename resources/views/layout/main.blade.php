@@ -34,7 +34,14 @@
                 </div>
             </nav>
         </header>
-        @yield('content')
+        <div class="container-fluid">
+            <div class="row">
+                @if(session('msg'))
+                <p class="msg">{{session('msg')}}</p>
+                @endif
+                @yield('content')
+            </div>
+        </div>
        <footer>
            <p>BlmNework-INFOSI &copy; {{ date('Y') }} - Meu Blog</p>
        </footer>

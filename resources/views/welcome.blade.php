@@ -14,12 +14,12 @@
     <div id="cards-container" class="row">
         @foreach ($events as $event)
         <div class="card col-md-3">
-            <img src="/img/event.webp" alt="{{ $event->title }}">
+            <img src="/img/events/{{ $event->image }}" alt="{{ $event->title }}">
             <div class="card-body">
                 <div class="card-date">{{ \Carbon\Carbon::parse($event->date)->format('d/m/Y') }}</div>
                 <div class="card-title">{{ $event->title }}</div>
                 <div class="card-participants">x-participantes</div>
-                <a href="#" class="btn btn-primary">saber mais</a>
+                <a href="/events/{{ $event->id }}" class="btn btn-primary">saber mais</a>
             </div>
         </div>
         @endforeach

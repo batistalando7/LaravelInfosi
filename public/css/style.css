@@ -34,6 +34,16 @@ header {
     border-color: #c28008;
 }
 
+.msg {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
 /* Navbar */
 
 #navbar img {
@@ -97,11 +107,11 @@ header {
 }
 
 #cards-container .card {
-    flex: 1 1 0;
+    flex: 1 1 24%;
     max-width: 25%;
     border-radius: 10px;
     padding: 0;
-    margin: 5px;
+    margin: .5%;
 }
 
 #cards-container img {
@@ -124,6 +134,61 @@ header {
 .card .card-participants {
     font-size: 14px;
     color: #757575;
+}
+
+/* create event */
+#create-event-container {
+    padding: 30px;
+}
+#create-event-contrainer input,
+#create-event-contrainer select,
+#create-event-contrainer textarea { 
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#event-create-container h1 {
+    margin-bottom: 30px;
+}
+
+#event-create-container form {
+    width: 100%;
+}
+
+/* show event */
+#image-container,
+#info-container
+ {
+    margin-top: 30px;
+}
+
+#image-container img {
+    border-radius: 10px;
+}
+
+#info-container h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+#info-container p {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+}
+#description-container h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+#info-container ion-icon {
+    font-size: 20px;
+    color: #f2a340;
+}
+
+#info-container #event-submit {
+    margin: 20px 0;
 }
 
 /* footer */
