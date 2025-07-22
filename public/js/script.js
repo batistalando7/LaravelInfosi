@@ -1,17 +1,19 @@
+/* 
 document.addEventListener('DOMContentLoaded', function () {
     const addButton = document.getElementById('button-addon2');
     const itemQtyInput = document.querySelector('#item_qty');
     const formCheckContainer = document.querySelector('.form-check');
+    const newCheck = formCheckContainer;
     var a = 0;
     addButton.addEventListener('click', function () {
-        if ((addButton && a === 0)) {
-            window.alert('Button clicked');
+
+        if ((addButton) && (a === 0)) {
+            window.alert('Button clicked' + itemQtyInput.value);
             a++;
             const itemQty = itemQtyInput.value;
             if (itemQty) {
-                window.alert('a =' + a)
                 for (let i = 0; i < itemQty; i++) {
-                    const newCheck = formCheckContainer.cloneNode(true);
+                    newCheck.cloneNode(true);
                     newCheck.style.display = 'block';
                     formCheckContainer.parentNode.insertBefore(newCheck, formCheckContainer.nextSibling);
 
@@ -22,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
             a=0
             const itemQty = itemQtyInput.value;
             if (itemQty) {
-                window.alert('a =' + a)
                 for (let i = 0; i < itemQty; i++) {
-                    const newCheck = formCheckContainer.cloneNode(true);
+
+                    newCheck.cloneNode(true);
                     newCheck.style.display = 'block';
                     formCheckContainer.parentNode.insertBefore(newCheck, formCheckContainer.nextSibling);
 
@@ -34,3 +36,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 });
+ */

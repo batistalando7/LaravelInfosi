@@ -13,6 +13,10 @@
             <input type="text" name="title" id="title" class="form-control" placeholder="Título do Evento" required>
         </div>
         <div class="form-group">
+            <label for="date">Data do Evento</label>
+            <input type="date" name="date" id="date" class="form-control" required>
+        </div>
+        <div class="form-group">
             <label for="city">Cidade do Evento</label>
             <input type="text" name="city" id="city" class="form-control" placeholder="Cidade do Evento" required>
         </div>
@@ -32,14 +36,26 @@
             <label for="image">Imagem do Evento</label>
             <input type="file" name="image" id="image" class="form-control" required>
         </div>
-        <div class="input-group mb-3">
+      <!--   <div class="input-group mb-3">
             <input type="number" class="form-control" id="item_qty" name="item_qty" placeholder="Quantidade de items" aria-label="Quantidade de items" aria-describedby="button-addon2">
             <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
-        </div>
+        </div> -->
        <!-- Seleção de Itens Dinamica - Checkbox -->
-        <div class="form-check" style="display: none;">
-            <input type="checkbox" name="items" id="items" class="form-check-input" value="" required>
-            <label for="items" class="form-check-label">Text-section</label>
+        <div class="form-check">
+            <input type="checkbox" name="items[]" id="items" class="form-check-input" value="Cadeiras" >
+            <label for="items" class="form-check-label">Cadeiras</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="items[]" id="items" class="form-check-input" value="Mesas" >
+            <label for="items" class="form-check-label">Mesas</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="items[]" id="items" class="form-check-input" value="Tendas" >
+            <label for="items" class="form-check-label">Tendas</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="items[]" id="items" class="form-check-input" value="Luzes" >
+            <label for="items" class="form-check-label">Luzes</label>
         </div>
 
         <div class="form-group">
